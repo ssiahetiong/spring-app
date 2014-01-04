@@ -1,6 +1,18 @@
-*.class
+# generated files
+bin
+target
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# dev folders
+
+# Eclipse Ignores
+.classpath
+.project
+.settings
+.metadata
+*.eclipse.jdt.core.prefs
+
+# IDEA Ignores
+*.iml
+*.ipr
+*.iws
+.idea
