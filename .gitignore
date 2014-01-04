@@ -3,6 +3,7 @@ bin
 target
 
 # dev folders
+awesome_data
 
 # Eclipse Ignores
 .classpath
