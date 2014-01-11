@@ -12,12 +12,12 @@ public class ResourceConfig {
     @Bean
     public DataSource dataSource() {
         BoneCPDataSource dataSource = new BoneCPDataSource();
-        dataSource.setJdbcUrl("jdbc:postgresql://localhost/awesome");
-        //dataSource.setJdbcUrl("jdbc:h2:./awesome;MODE=PostgreSQL;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000");
+        //dataSource.setJdbcUrl("jdbc:postgresql://localhost/awesome");
+        dataSource.setJdbcUrl("jdbc:h2:./awesome;MODE=PostgreSQL;AUTO_SERVER=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=10000");
         dataSource.setUser("postgres");
         dataSource.setPassword("postgres");
-        dataSource.setDriverClass("org.postgresql.Driver");
-        //dataSource.setDriverClass("org.h2.jdbcx.JdbcDataSource");
+        //dataSource.setDriverClass("org.postgresql.Driver");
+        dataSource.setDriverClass("org.h2.jdbcx.JdbcDataSource");
         return dataSource;
     }
 
